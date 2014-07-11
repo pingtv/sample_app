@@ -13,6 +13,11 @@ describe "Pages" do
       visit '/pages/home'
       page.should have_selector('title', :text => "Ruby on Rails Tutorial Sample App | Home")
     end
+
+    it "should have a non-blank body" do
+      visit '/pages/home'
+      page.body.should_not =~ /<body>\s*<\/body>/
+    end
   end
 
   describe "Contact page" do
