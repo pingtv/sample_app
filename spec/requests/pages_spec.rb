@@ -39,6 +39,7 @@ describe "Pages" do
       visit 'pages/about'
       page.should have_selector('title', :text => "Ruby on Rails Tutorial Sample App | About Us")
     end
+
   end
 
 end
