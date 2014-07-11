@@ -36,7 +36,7 @@ describe "Pages" do
     end
 
     it "should have the title 'About Us'" do
-      visit 'pages/about'
+      visit '/pages/about'
       page.should have_selector('title', :text => "Ruby on Rails Tutorial Sample App | About Us")
     end
 
