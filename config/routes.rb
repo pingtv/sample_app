@@ -3,6 +3,8 @@ SampleApp::Application.routes.draw do
 
   root to: 'pages#home'
 
+  match '/signup', to: 'users#new'
+
   get '/contact', to: 'pages#contact'
 
   get '/help', to: 'pages#help'
